@@ -1,0 +1,107 @@
+
+input{
+    outline: none;
+}
+
+#output {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.322);
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    z-index: 999 !important;
+}
+
+.container{
+    width: 700px;
+    margin: 0 auto;
+}
+.form{
+    width: 500px;
+    margin: 0 auto;
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/1box.jpg);
+    background-position: center;
+    
+}
+.div{
+    text-align: center;
+    margin: 0 auto;
+    margin:  10px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(114, 78, 12, 0.219);
+    box-shadow: 0px 1px 7px black;
+}
+input{
+    padding: 5px 10px;
+    width: 95%;
+    margin: 10px 0px;
+    background-color: rgba(192, 96, 128, 0.137);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.301);
+    color: rgb(0, 0, 0);
+}
+input::placeholder{
+    color: rgb(0, 0, 0) ;
+}
+.update{
+    display: inline-block;
+    width: 95%;
+    background-color: rgba(243, 59, 59, 0.775);
+    padding: 10px 0px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 10px;
+
+}
+.img{
+    max-width: 100%;
+    height: 200px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn{
+    padding: 10px 25px;
+    width: auto;
+    display: block;
+    margin: 0 auto;  
+}
+
+h3{
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+}
+p{
+    font-weight: 700;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.795);
+}
+@media screen and (max-width:575px){
+    #output{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width:575px) and (max-width:767px) {
+    #output{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:767px) and (max-width:991px){
+    #output{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
